@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElimuVerse Academy | Next-Generation Elite Education</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for sleek futuristic typography -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 1. NAVIGATION CONTROL INTERFACE -->
+    <header class="school-header">
+        <div class="school-logo">ELIMU<span>VERSE</span></div>
+        <nav class="school-nav">
+            <a href="#hero">Campus Core</a>
+            <a href="#tiers">Academic Pillars</a>
+            <a href="#admission">Secure Admission</a>
+        </nav>
+        <button class="portal-btn" onclick="jumpToAdmission()">Student Portal</button>
+    </header>
+
+    <!-- 2. SYSTEM HOOK HERO SECTION -->
+    <section id="hero" class="hero-container">
+        <div class="grid-overlay"></div>
+        <div class="hero-main-content">
+            <span class="tech-badge">// ADMISSIONS OPEN 2027</span>
+            <h1>Architecting The Future Leaders Of Tanzania</h1>
+            <p>A hyper-modern educational ecosystem merging bilingual mastery, computational logic, and elite scientific leadership from nursery to secondary levels.</p>
+            <div class="hero-button-row">
+                <a href="#tiers" class="btn-primary-orange">Explore Pillars</a>
+                <a href="#admission" class="btn-secondary-outline">Initialize Registry</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. ACADEMIC LEVEL TIERS GRID -->
+    <section id="tiers" class="tiers-section">
+        <div class="section-header-block">
+            <h2>Our Specialized Training Tiers</h2>
+            <p>Every tier is systematically engineered to develop absolute mastery and high-performance discipline.</p>
+        </div>
+        
+        <div class="tiers-responsive-grid">
+            <!-- Tier 1 -->
+            <div class="tier-card-box">
+                <div class="tier-graphic bg-nursery">
+                    <span class="age-badge">Ages 3 - 5</span>
+                </div>
+                <div class="tier-card-body">
+                    <h3>Elimu Kids Foundation</h3>
+                    <p>Early neuro-linguistic programming using intensive multi-language frameworks and spatial puzzle structures.</p>
+                </div>
+            </div>
+            <!-- Tier 2 -->
+            <div class="tier-card-box">
+                <div class="tier-graphic bg-primary">
+                    <span class="age-badge">Ages 6 - 12</span>
+                </div>
+                <div class="tier-card-body">
+                    <h3>Primary Logic Core</h3>
+                    <p>Transitioning pupils into systemic thinking, software variables, mathematics, and natural sciences natively.</p>
+                </div>
+            </div>
+            <!-- Tier 3 -->
+            <div class="tier-card-box">
+                <div class="tier-graphic bg-secondary">
+                    <span class="age-badge">Ages 13 - 19</span>
+                </div>
+                <div class="tier-card-body">
+                    <h3>Advanced Global Academy</h3>
+                    <p>Elite preparatory academy for international business, software architectures, translation, and diplomatic mastery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. INTERACTIVE ADMISSION MONITOR CONSOLE -->
+    <section id="admission" class="admission-console-section">
+        <div class="admission-wrapper-box">
+            <h2>Instant Student Registry Module</h2>
+            <p>Input candidate parameters below to stream an entry validation request to the registrar.</p>
+            
+             <!-- Real-World Student Registry Cloud Processing Form -->
+            <form id="admission-matrix-form" action="https://formspree.io/f/xeeyjkae" method="POST">
+                <div class="form-input-row">
+                    <label for="student-name">Candidate Full Name (As per birth certificate)</label>
+                    <input type="text" id="student-name" name="Candidate_Full_Name" placeholder="E.g., Michael Juma" required>
+                </div>
+                
+                <div class="form-split-grid">
+                    <div class="form-input-row">
+                        <label for="target-tier">Target Academic Tier</label>
+                        <select id="target-tier" name="Requested_Academic_Tier" required>
+                            <option value="">-- Select Target Vector --</option>
+                            <option value="Kids Foundation">Elimu Kids Foundation</option>
+                            <option value="Primary Core">Primary Logic Core</option>
+                            <option value="Advanced Academy">Advanced Global Academy</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-input-row">
+                        <label for="parent-phone">Parent Contact Line</label>
+                        <input type="tel" id="parent-phone" name="Parent_Phone_Number" placeholder="07xxxxxxxx" required>
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-matrix-btn">EXECUTE REGISTRY STREAM</button>
+            </form>
+           
+            <!-- Live Client Feedback Panel -->
+            <div id="console-output-panel" class="panel-hidden"></div>
+        </div>
+    </section>
+
+    <!-- 5. TERMINAL FOOTER CONTAINER -->
+    <footer class="school-footer">
+        <p>&copy; 2026 ElimuVerse Academy Group. Designed by Developer Rj. Education for Sovereignty.</p>
+    </footer>
+
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
